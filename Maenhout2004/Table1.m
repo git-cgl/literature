@@ -1,24 +1,20 @@
-function Table1(ExcessReturn,sigma)
+function Table1(Ret,Vol,RA,AA)
 %
-% Generate Table 1 in Maenhout (2004)
-%  
+% Table 1 in Maenhout (2004)
+%
 
-theta = [0, 0.1, 0.5, 1, 2, 5, 10];
-gam = [1,5,7,10];
-
-NT = length(theta);
-NG = length(gam);
+Ng = length(RA);
+Nt = length(AA);
 
 disp('Table 1');
 disp('Portfolio share invested in equity and implied pessimistic scenario');
-disp(' ');
-for j = 1:NT
-    for i = 1:NG
-        omega = ExcessReturn/(sigma^2*(gam(i)+theta(j)));
-        EPp = ExcessReturn*gam(i)/(gam(i)+theta(j));
-        fprintf('%1.4f\t%1.4f\t\t',omega,EPp);
-    end
-    disp(' ');
-end
-
-disp(' ');
+disp('Risk aversion levels in columns');
+disp(RA');
+disp('Ambiguity aversion levels in rows');
+disp(AA');
+OptimalShare = (Ret/Vol^2)./(ones(Nt,1)*RA'+AA*ones(1,Ng));
+disp('Optimal protfolio wieght allocated to the risky asset');
+disp(OptimalShare);
+WorstCase = (ones(Nt,1)*RA')./(ones(Nt,1)*RA'+AA*ones(1,Ng))*Ret;
+disp('Model-assoiciated pessimistic scenario supporting the portfolio');
+disp(WorstCase);

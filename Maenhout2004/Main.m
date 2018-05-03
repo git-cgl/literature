@@ -1,10 +1,14 @@
-clear
+clear all
 clc
 
 %% Table 1
-ExcessReturn = 0.06; 
-sigma = 0.16;
-Table1(ExcessReturn,sigma)
+ExcessReturn = 0.06;
+Volatility = 0.16;
+% To calibrate different levels of risk-aversion and ambiguity-aversion
+RiskAversion = [1;5;7;10];
+AmbiguityAversion = [0;0.1;0.5;1;2;5;10];
+
+Table1(ExcessReturn,Volatility,RiskAversion,AmbiguityAversion);
 
 % Result in Text - Detection error probability for EPp = 2% and 3%
 N = 100;
@@ -23,9 +27,9 @@ disp(' ');
 
 %% Table 2
 % Parameters from Campbell (1999)
-% r1: annualized connsumption and return for 1891-1994;
-% r2: quarterly postwar sample (1947.2-1996.3);
-% c1-5: mu_C, sigma_C, sigma_S, rho,r, mu_S-r
+% Column 1: Annualized consumption and return parameters 1891-1994;
+% Column 2: Quarterly postwar sample 1947.2-1996.3;
+% Rows: Consumption growth, Consumption Volatility, sigma_S, rho,r, mu_S-r
 params = [0.01742, 0.03257, 0.18534, 0.497,  0.01955, 0.06258;
           0.01908, 0.01084, 0.15218, 0.193, 0.007852, 0.07852];
 pinvphi = 0.6;
