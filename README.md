@@ -1,5 +1,9 @@
 # Replications of Selected Literatures
 
-## Robust Control and Asset Pricing
+## Classical Asset Pricing: Empirical
 
-1. [Robust Portfolio Rules and Asset Pricing](https://authors.library.caltech.edu/13793/1/MACnc92b.pdf)
+1. [The Equity Premium: A Puzzle](https://www.sciencedirect.com/science/article/pii/0304393285900613)
+
+## Robust Control and Ambiguity in Asset Pricing
+
+1. [Robust Portfolio Rules and Asset Pricing](https://academic.oup.com/rfs/article-abstract/17/4/951/1570792)
