@@ -1,4 +1,4 @@
-function error = Table3(params,the,Num)
+function error = table3(params,the,Num)
 
 error = zeros(1,2);
 for T=1:2

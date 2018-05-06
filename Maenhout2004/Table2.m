@@ -1,4 +1,4 @@
-function [delta,invphi,gamma,theta,EPp] = Table2(params,pinvphi,pgamma)
+function [delta,invphi,gamma,theta,EPp] = table2(params,pinvphi,pgamma)
 %
 % Generate Table 2 in Maenhout (2004)
 %  

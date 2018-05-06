@@ -1,7 +1,4 @@
-function Table1(Ret,Vol,RA,AA)
-%
-% Table 1 in Maenhout (2004)
-%
+function table1(Ret,Vol,RA,AA)
 
 Ng = length(RA);
 Nt = length(AA);
