@@ -8,7 +8,7 @@ Volatility = 0.16;
 RiskAversion = [1;5;7;10];
 AmbiguityAversion = [0;0.1;0.5;1;2;5;10];
 
-Table1(ExcessReturn,Volatility,RiskAversion,AmbiguityAversion);
+table1(ExcessReturn,Volatility,RiskAversion,AmbiguityAversion);
 
 % Result in Text - Detection error probability for EPp = 2% and 3%
 N = 100;
@@ -34,12 +34,12 @@ params = [0.01742, 0.03257, 0.18534, 0.497,  0.01955, 0.06258;
           0.01908, 0.01084, 0.15218, 0.193, 0.007852, 0.07852];
 pinvphi = 0.6;
 pgamma = [7,10];
-[delta,invphi,gamma,theta,EPp] = Table2(params,pinvphi,pgamma);
+[delta,invphi,gamma,theta,EPp] = table2(params,pinvphi,pgamma);
 
 %% Table 3
 Tnum = [104,50];
-Table3(params,theta([2,4]),Tnum);
+table3(params,theta([2,4]),Tnum);
 % Table3(params,[14 237],Tnum);
 
 %% Table 4
-Table4(params,EPp,Tnum)
+table4(params,EPp,Tnum)

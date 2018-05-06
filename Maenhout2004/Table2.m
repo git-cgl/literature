@@ -9,6 +9,7 @@ gamma = zeros(2,2);
 theta = zeros(2,2);
 EPp = NaN(2,2);
 for T=1:2  % 1 for 1981-1994 annually; 2 for 1947.2-1996.3 quarterly
+    
     muC = params(T,1);
     sigmaC = params(T,2);
     sigmaS = params(T,3);
@@ -27,7 +28,7 @@ for T=1:2  % 1 for 1981-1994 annually; 2 for 1947.2-1996.3 quarterly
             if T==1
                 gamma(T,flag) = pgamma(T);
             else
-                gamma(T,flag)=pgamma(T);
+                gamma(T,flag) = pgamma(T);
             end
             theta(T,flag) = aversion - gamma(T,flag);
             invphi(T,flag) = 1/pinvphi;
