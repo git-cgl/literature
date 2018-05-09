@@ -1,6 +1,6 @@
 # Replications of Selected Literatures
 
-## Classical Asset Pricing: Empirical
+## Testing Classical Asset Pricing Theories
 
 1. [The Equity Premium: A Puzzle](https://www.sciencedirect.com/science/article/pii/0304393285900613) @MehraPrescott1985
 
