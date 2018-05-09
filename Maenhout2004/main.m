@@ -17,7 +17,7 @@ EPt = 0.06;
 EPp = [0.03 0.02];
 error = zeros(1,2);
 d = -sqrt(N)*(EPt-EPp)/(2*sigmaC);
-error = normcdf(d)*100;
+error = normcdf(d)*100; 
 
 disp('Result in Text (1)');
 disp('Detection error probability for EPp = 2% and 3%');
