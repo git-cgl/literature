@@ -1,8 +1,10 @@
 # Replications of Selected Literatures
 
-## Classical Asset Pricing: Empirical
+## Testing Classical Asset Pricing Theories
 
 1. [The Equity Premium: A Puzzle](https://www.sciencedirect.com/science/article/pii/0304393285900613) @MehraPrescott1985
+
+2. [The Equity Premium Puzzle and the Risk-free Rate Puzzle](https://www.sciencedirect.com/science/article/pii/0304393289900287) @Weil1989
 
 ## Robust Control and Ambiguity in Asset Pricing
 
