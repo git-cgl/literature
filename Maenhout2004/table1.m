@@ -3,7 +3,6 @@ function table1(Ret,Vol,RA,AA)
 Ng = length(RA);
 Nt = length(AA);
 
-disp('Table 1');
 disp('Portfolio share invested in equity and implied pessimistic scenario');
 disp('Risk aversion levels in columns');
 disp(RA');

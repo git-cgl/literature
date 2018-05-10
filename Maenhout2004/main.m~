@@ -75,14 +75,25 @@ table2e(Parameter2,Psi2,Gamma2,1);
 
 %% Table 3
 disp('Table 3 and Table 4')
-DetectionProb = [0.1;0.2;0.3];
+ErrorLe = [0.1;0.2;0.3];
 
 disp('Data set 1: Annualized consumption and return parameters 1891-1994')
-T1 = 104;
-table3(Parameter1,[AnnualT, AnnualEPp],T1);
-table4(Parameter1,DetectionProb,Gamma1,T1);
+T = 104;
+table3(Parameter1,[AnnualT, AnnualEPp],T);
 
 disp('Data set 2: Quarterly postwar sample 1947.2-1996.3')
-T2 = 50;
-table3(Parameter2,[QuaterlyT, QuaterlyEPp],T2);
-table4(Parameter2,DetectionProb,Gamma2,T2);
+T = 50;
+table3(Parameter2,[QuaterlyT, QuaterlyEPp],T);
+
+%% Table 4
+disp('Table 3')
+% To calibrate different levels of risk-aversion and ambiguity-aversion
+Error = [0.1;0.2;0.3];
+
+disp('Data set 1: Annualized consumption and return parameters 1891-1994')
+T = 104;
+table3(Parameter1,[AnnualT, AnnualEPp],T);
+
+disp('Data set 2: Quarterly postwar sample 1947.2-1996.3')
+T = 50;
+table3(Parameter2,[QuaterlyT, QuaterlyEPp],T);

@@ -1,19 +1,13 @@
-function error = table3(params,the,Num)
+function error = table3(Parameters,T2Result,Length)
 
-error = zeros(1,2);
-for T=1:2
-    N = Num(T);
-    sigmaC = params(T,2);
-    rho = params(T,4);
+N = Length;
+SigmaC = Parameters(2);
+Corr = Parameters(4);
 
-    theta = the(T);
-    
-    d = -sqrt(N)*theta*sigmaC*rho/2;
-    error(T) = normcdf(d)*100;
-end
+Theta = T2Result(1);
+EPp = T2Result(2);
 
-disp('Table 3');
-disp('Detection error probabilities for \theta as required in Table 2');
-disp(' ');
-disp(error);
-disp(' ');
+Error = normcdf(-sqrt(N)*Theta*SigmaC*Corr/2)*100;
+
+disp('Detection error probabilities as required in Table 2');
+disp([EPp, Theta, Error]);
