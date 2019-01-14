@@ -16,4 +16,6 @@ This paper describes links between the max-min expected utility theory and the a
 
 2. [Robust Portfolio Rules and Asset Pricing](https://academic.oup.com/rfs/article-abstract/17/4/951/1570792) @ Maenhout (2004)
 
+This paper uses the robust-control approach to solve a simple dynamic portfolio problem.
+
 ## Market Microstructure
